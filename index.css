@@ -1,0 +1,608 @@
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --yellow-high: #FBBE04;
+    --orange-high: #F77E21;
+    --peach-low: #FEF9A7;
+    --padding-side: 0 15px;
+
+    --nav-mobile-1: 70px; 
+}
+
+* {
+    font-family: var(--font-poppins);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    background-color: var(--orange-high);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Curse Transisi */
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.source {
+    background-image: url(./curve-transisi/stacked-waves-haikei.svg);
+    margin-top: 20px;
+}
+
+.source2 {
+    background-image: url(./curve-transisi/stacked-waves-haikei-2.svg);
+}
+
+/* Navbar-mobile button */
+nav.navbar-mobile {
+    background-color: var(--orange-high);
+    color: whitesmoke;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+    height: var(--nav-mobile-1);
+    padding: 0 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    top: 0px;
+    z-index: 2;
+}
+
+nav.navbar-mobile div.menu-button{
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 0;
+    /* padding: 20px; */
+}
+
+/* Navbar-menu */
+nav.navbar-menu {
+    background-color: var(--peach-low);
+    height: 200px;
+    width: 100%;
+
+    position: absolute;
+
+    top: -200px;
+    z-index: 1;
+    
+    transition: all 0.3s;
+}
+
+nav.navbar-menu div.name-company{
+    display: none;
+}
+
+nav.navbar-menu ul{
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+nav.navbar-menu ul li{
+    width: 100%;
+}
+
+nav.navbar-menu ul li a{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    padding: 15px 10px;
+
+    color: var(--orange-high);
+}
+
+nav.navbar-menu ul li a{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    padding: 15px 10px;
+
+    color: var(--orange-high);
+
+    transition: all 0.5s;
+}
+
+nav.navbar-menu ul li a:hover{
+    background-color: var(--yellow-high);
+    color: white;
+}
+
+nav.muncul {
+    top: var(--nav-mobile-1);
+}
+
+/* Carousel image */
+div.wrapper-carousel {
+    width: 100%;
+    position: relative;
+}
+
+div.wrapper-carousel div.button-carousel{
+    font-size: 7rem;
+    color: var(--orange-high);
+    opacity: 0.9;
+    position: absolute;
+
+    cursor: pointer;
+    line-height: 0;
+}
+
+div.wrapper-carousel div.button-left{
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: 10%;
+}
+
+div.wrapper-carousel div.button-right{
+    top: 50%;
+    transform: translateY(-50%);
+
+    right: 10%;
+}
+
+div.wrapper-carousel {
+    width: 100%;
+    position: relative;
+}
+
+
+div.wrapper-carousel div.wrapper-carousel-images {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+div.wrapper-carousel div.wrapper-carousel-images img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+    position: absolute;
+}
+
+div.wrapper-carousel div.wrapper-carousel-images img.temp-img {
+    opacity: 0;
+}
+
+@keyframes carousel-muncul {
+    to {
+        opacity: 1;
+    }
+}
+
+div.wrapper-carousel div.wrapper-carousel-images img.carousel-muncul {
+    animation-name: carousel-muncul;
+    animation-fill-mode: forwards;
+    animation-duration: 700ms;
+}
+
+/* Section ABOUT US */
+div.aboutus-section {
+    max-width: 1100px;
+    width: 100%;
+    padding: var(--padding-side);
+    margin: 0 auto;
+    margin-top: 20px;
+
+    color: whitesmoke;
+    text-align: center;
+}
+
+div.aboutus-section h1{
+    font-size: 3rem;
+}
+
+div.aboutus-section p{
+    font-size: 1.1rem;
+}
+
+div.aboutus-section div.aboutus-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+div.aboutus-section div.aboutus-images div.image-aboutus{
+    width: 100%;
+    border-radius: 10px;
+    
+    line-height: 0;
+
+    transform: translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+
+div.aboutus-section div.aboutus-images div.image-aboutus:nth-child(2){
+    margin-top: 20px;
+}
+
+div.aboutus-section div.aboutus-images div.image-aboutus img{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* OUR PRODUCT Section */
+div.ourproduct-section {
+    padding: var(--padding-side);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+    color: var(--orange-high);
+    text-align: center;
+    
+    background-color: var(--peach-low);
+}
+
+div.ourproduct-section div.middle-section {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+div.ourproduct-section h1{
+    font-size: 3rem;
+    line-height: 50px;
+}
+
+div.ourproduct-section div.products-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+div.ourproduct-section div.products-info div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    transform: translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+}
+
+div.ourproduct-section div.products-info div:nth-child(2){
+    margin-top: 100px;
+}
+
+div.ourproduct-section div.products-info div img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+div.ourproduct-section div.products-info div h2{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+div.ourproduct-section div.products-info div p{
+    font-size: 1.1rem;
+}
+
+div.ourproduct-section a{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    text-decoration: none;
+    
+    background-color: var(--yellow-high);
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    display: block;
+}
+
+/* Awards Section */
+div.award-section {
+    color: whitesmoke;
+    text-align: center;
+}
+
+div.award-section h1 {
+    font-size: 3rem;
+}
+
+div.award-section div.list-awards {
+    display: flex;
+    flex-direction: column;
+}
+
+div.award-section div.list-awards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.award-section div.list-awards div{
+    width: 90%;
+    max-width: 300px;
+    height: 300px;
+    color: var(--orange-high);
+    background-color: var(--peach-low);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    transform: translateY(-30px);
+    transition: all 1s;
+    opacity: 0;
+
+}
+
+div.award-section div.list-awards div h2{
+    font-size: 2rem;
+}
+
+/* Footer */
+footer.footer {
+    background-color: var(--peach-low);
+    color: var(--orange-high);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+    margin-top: 100px;
+    padding: 20px;
+
+    font-size: 1.5rem;
+}
+
+footer.footer div.sosmed-list div.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.footer div.sosmed-list div.sosmed p{
+    margin-left: 10px;
+}
+
+footer.footer p.madeby {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animation */
+.muncul-dari-atas {
+    transform: translateY(0) !important;
+    opacity: 1 !important; 
+}
+
+@media all and (min-width: 540px) {
+    /* Section ABOUT US */
+    div.aboutus-section div.aboutus-images div.image-aboutus img{
+        height: 300px;
+    }
+
+    div.ourproduct-section div.products-info div img{
+        height: 300px;
+    }
+}
+
+@media all and (min-width: 768px) {
+
+    /* Navbar-menu */
+    nav.navbar-mobile {
+        display: none;
+    }
+
+    nav.navbar-menu {
+        position: sticky;
+        top: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: auto;
+
+        padding-left: 20px;
+    }
+
+    nav.navbar-menu div.name-company{
+        display: block;
+        color: var(--orange-high);
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    nav.navbar-menu ul{
+        flex-direction: row;
+    }
+
+    nav.navbar-menu ul li a{
+        padding: 20px 15px;
+    }
+
+    nav.navbar-menu ul li a.here{
+        background-color: var(--yellow-high);
+        color: white;
+    }
+
+
+    /* Section ABOUT US */
+    div.aboutus-section div.aboutus-images {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.aboutus-section div.aboutus-images div.image-aboutus{
+        padding: 20px;
+    }
+
+    div.aboutus-section div.aboutus-images div.image-aboutus:nth-child(2){
+        margin-top: 0px;
+    }
+
+    /* OUR PRODUCT Section */
+    div.ourproduct-section div.products-info{
+        flex-direction: row;
+    }
+
+    div.ourproduct-section div.products-info div:nth-child(2){
+        margin-top: 0px;
+    }
+
+    div.ourproduct-section div.products-info div{
+        padding: 20px;
+    }
+
+    div.ourproduct-section a{
+        width: 200px;
+    }
+
+    /* Awards Section */
+    div.award-section div.list-awards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    /* Footer */
+    footer.footer {
+        font-size: 2rem;
+        margin-top: 150px;
+    }
+
+    footer.footer div.sosmed-list{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer.footer p.madeby {
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (min-width: 912px) {
+
+    /* Carousel image */
+    div.wrapper-carousel div.wrapper-carousel-images {
+        height: 500px;
+    }
+
+    /* Section ABOUT US */
+    div.aboutus-section h1{
+        font-size: 5rem;
+    }
+
+    div.aboutus-section p{
+        font-size: 1.4rem;
+    }
+    
+    div.aboutus-section div.aboutus-images div.image-aboutus img{
+        height: 300px;
+    }
+
+    /* OUR PRODUCT Section */
+    div.ourproduct-section h1{
+        font-size: 5rem;
+        line-height: normal;
+    }
+
+    div.ourproduct-section div.products-info div img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    div.ourproduct-section div.products-info div h2{
+        font-size: 3rem;
+    }
+    
+    div.ourproduct-section div.products-info div p{
+        font-size: 1.4rem;
+    }
+
+    div.ourproduct-section a{
+        width: 300px;
+        padding: 20px 10px;
+    }
+
+    /* Awards Section */
+    div.award-section h1 {
+        font-size: 5rem;
+    }
+
+    div.award-section div.list-awards div h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    /* Navbar-menu */
+    nav.navbar-menu ul li a{
+        font-size: 1.2rem;
+        transition: all 0.5s;
+        padding: 20px 40px;
+    }
+
+    nav.navbar-menu div.name-company{
+        font-size: 2.2rem;
+    }
+
+    /* OUR PRODUCT Section */
+    div.ourproduct-section div.products-info{
+        margin-top: 0px;
+    }
+
+    div.ourproduct-section a{
+        transition: all 0.5s;
+        margin-top: 30px;
+    }
+    div.ourproduct-section a:hover{
+        background-color: var(--orange-high);
+    }
+}

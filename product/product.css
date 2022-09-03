@@ -1,0 +1,612 @@
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --yellow-high: #FBBE04;
+    --orange-high: #F77E21;
+    --peach-low: #FEF9A7;
+    --padding-side: 0 15px;
+
+    --nav-mobile-1: 70px; 
+}
+
+* {
+    font-family: var(--font-poppins);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    background-color: var(--orange-high);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar-mobile button */
+nav.navbar-mobile {
+    background-color: var(--orange-high);
+    color: whitesmoke;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+    height: var(--nav-mobile-1);
+    padding: 0 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    top: 0px;
+    z-index: 2;
+}
+
+nav.navbar-mobile div.menu-button{
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 0;
+}
+
+/* Navbar-menu */
+nav.navbar-menu {
+    background-color: var(--peach-low);
+    height: 200px;
+    width: 100%;
+
+    position: absolute;
+
+    top: -200px;
+    z-index: 1;
+    
+    transition: all 0.3s;
+}
+
+nav.navbar-menu div.name-company{
+    display: none;
+}
+
+nav.navbar-menu ul{
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+nav.navbar-menu ul li{
+    width: 100%;
+}
+
+nav.navbar-menu ul li a{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    padding: 15px 10px;
+
+    color: var(--orange-high);
+}
+
+nav.navbar-menu ul li a{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    padding: 15px 10px;
+
+    color: var(--orange-high);
+
+    transition: all 0.5s;
+}
+
+nav.navbar-menu ul li a:hover{
+    background-color: var(--yellow-high);
+    color: white;
+}
+
+nav.muncul {
+    top: var(--nav-mobile-1);
+}
+
+/* Search and filter */
+div.search-filter-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 40px;
+    margin-top: 60px;
+}
+
+div.search-filter-section div > *{
+    border-radius: 10px;
+}
+
+div.search-filter-section div.filter select{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    background-color: var(--peach-low);
+    color: var(--orange-high);
+}
+
+div.search-filter-section div.search input{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+
+    border: none;
+    outline: none;
+    background-color: var(--peach-low);
+    color: var(--orange-high);
+
+    font-size: 1.3rem;
+}
+
+/* List product */
+main.list-products {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+main.list-products > div{
+    margin-bottom: 100px;
+}
+
+
+main.list-products > div > h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+main.list-products > div > h3 {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+
+    width: 200px;
+    background-color: rgb(217, 0, 0);
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+main.list-products div.each-list-products{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 240px);
+    gap: 50px;
+    margin-top: 20px;
+
+    transition: all 0.5s;
+}
+
+main.list-products div.each-list-products > div {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+main.list-products div.each-list-products > div div.image-product{
+    line-height: 0;
+    height: 240px;
+    transition: all 0.5s;
+}
+
+main.list-products div.each-list-products > div div.image-product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main.list-products div.each-list-products > div div.info-detail{
+    background-color: var(--orange-high);
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+main.list-products div.each-list-products > div div.info-detail:hover{
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 10px;
+}
+
+main.list-products div.each-list-products > div div.info-detail i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: whitesmoke;
+    font-size: 1.8rem;
+    display: block;
+
+}
+
+main.list-products div.each-list-products > div div.information{
+    position: absolute;
+    top: -100%;
+    left: -100%;
+
+    transition: all 0.5s;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+
+    color: var(--orange-high);
+    background-color: var(--peach-low);
+
+    overflow-y: auto;
+}
+
+/* width */
+main.list-products div.each-list-products > div div.information::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  /* Track */
+main.list-products div.each-list-products > div div.information::-webkit-scrollbar-track {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--peach-low);
+}
+   
+  /* Handle */
+main.list-products div.each-list-products > div div.information::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    width: 20px;
+}
+
+main.list-products div.each-list-products > div div.information h2{
+    margin-top: 50px;
+    word-break: break-all;
+}
+
+main.list-products div.each-list-products > div div.information p{
+    margin-top: 15px;
+    word-break: break-all;
+}
+
+main.list-products div.each-list-products > div div.info-detail + div.information.info-open{
+    top: 0;
+    left: 0;
+}
+
+main.list-products div.each-list-products > div div.info-detail + div.information div.close-info {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+main.list-products div.each-list-products > div div.info-detail + div.information div.close-info:hover {
+    transform: rotate(360deg);
+}
+
+main.list-products div.each-list-products > div div.info-detail + div.information div.close-info i{
+
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2.2rem;
+    
+}
+
+main.list-products div.each-list-products > div div.name-product{
+    background-color: var(--peach-low);
+    text-align: center;
+    color: var(--orange-high);
+
+    height: auto;
+    padding: 20px 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+main.list-products div.each-list-products > div div.name-product h2{
+    word-break: break-all;
+    font-weight: 400;
+}
+
+/* Footer */
+footer.footer {
+    background-color: var(--peach-low);
+    color: var(--orange-high);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+    margin-top: 100px;
+    padding: 20px;
+
+    font-size: 1.5rem;
+}
+
+footer.footer div.sosmed-list div.sosmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.footer div.sosmed-list div.sosmed p{
+    margin-left: 10px;
+}
+
+footer.footer p.madeby {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes munculCard{
+    from {
+        opacity: 0;
+        display: none;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        display: block;
+        transform: scale(1);
+    }
+}
+
+@keyframes hilangCard{
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.animasi-munculCard {
+    animation-name: munculCard;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animasi-hilangCard {
+    animation-name: hilangCard;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@media all and (min-width: 360px) {
+    /* Product */
+    main.list-products div.each-list-products{
+        grid-template-columns: repeat(1, 300px);
+    }
+    
+    main.list-products div.each-list-products > div div.image-product{
+        height: 300px;
+    }
+}
+
+
+@media all and (min-width: 540px) {
+    /* Product */
+    main.list-products div.each-list-products > div div.info-detail{
+        top: 15px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    main.list-products div.each-list-products > div div.info-detail i{
+        font-size: 2rem;
+    }
+    
+     main.list-products div.each-list-products > div div.info-detail + div.information div.close-info {
+        width: 50px;
+        height: 50px;
+    }
+        
+    main.list-products div.each-list-products > div div.info-detail + div.information div.close-info i{
+        font-size: 2.3rem;    
+    }
+    
+    main.list-products div.each-list-products > div div.information h2{
+        margin-top: 65px;
+    }
+    
+    main.list-products div.each-list-products > div div.information p{
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /* Products */
+    main.list-products div.each-list-products{
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    main.list-products div.each-list-products > div div.image-product{
+        height: 300px;
+    }
+
+    /* Navbar-menu */
+    nav.navbar-mobile {
+        display: none;
+    }
+
+    nav.navbar-menu {
+        position: sticky;
+        top: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: auto;
+
+        padding-left: 20px;
+    }
+
+    nav.navbar-menu div.name-company{
+        display: block;
+        color: var(--orange-high);
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    nav.navbar-menu ul{
+        flex-direction: row;
+    }
+
+    nav.navbar-menu ul li a{
+        padding: 20px 15px;
+    }
+
+    nav.navbar-menu ul li a.here{
+        background-color: var(--yellow-high);
+        color: white;
+    }
+
+    /* Footer */
+    footer.footer {
+        font-size: 2rem;
+        margin-top: 150px;
+    }
+
+    footer.footer div.sosmed-list{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer.footer p.madeby {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media all and (min-width: 960px){
+    /* Product */
+    main.list-products div.each-list-products{
+        grid-template-columns: repeat(2, 400px);
+    }
+
+    main.list-products div.each-list-products > div div.image-product{
+        height: 400px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    /* Navbar-menu */
+    nav.navbar-menu ul li a{
+        font-size: 1.2rem;
+        transition: all 0.5s;
+        padding: 20px 40px;
+    }
+
+    nav.navbar-menu div.name-company{
+        font-size: 2rem;
+    }
+
+    /* Search and filter */
+    div.search-filter-section {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 0;
+    }
+    
+
+    div.search-filter-section > div:nth-child(1){
+        flex-basis: 50%;
+        margin-right: 40px;
+    }
+    
+    div.search-filter-section > div:nth-child(2){
+        flex-basis: 20%;
+    }
+
+    div.search-filter-section div.filter{
+        /* margin-right: 100px; */
+    }
+    
+    div.search-filter-section div.filter select{
+        display: block;
+        margin-top: 0px;
+        flex-basis: 20%;
+    }
+
+}
+
+@media all and (min-width: 1150px){
+    /* Product */
+    main.list-products div.each-list-products{
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    main.list-products div.each-list-products > div div.image-product{
+        height: 300px;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    /* Product */
+    main.list-products div.each-list-products{
+        grid-template-columns: repeat(3, 350px);
+    }
+
+    main.list-products div.each-list-products > div div.image-product{
+        height: 350px;
+    }
+
+    main.list-products > div > h1 {
+        font-size: 5rem;
+    }
+    
+}
+
+

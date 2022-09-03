@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Oreo (Original)",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Oreo_original.jpg"
+    },
+
+    {
+        "id": 2,
+        "name": "Oreo (Strawberry)",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Oreo_strawberry.jpg"
+    },
+
+    {
+        "id": 3,
+        "name": "Kukisku",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Kukisku.jpg"
+    },
+
+    {
+        "id": 4,
+        "name": "Pringles (Original)",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Pringles_original.jpg"
+    },
+
+    {
+        "id": 5,
+        "name": "Pringles (Sour Cream & Onion)",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Pringles_sour_cream_onion.jpg"
+    },
+
+    {
+        "id": 6,
+        "name": "Taro Net (Seaweed)",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Taro_net_seaweed.jpg"
+    },
+
+    {
+        "id": 7,
+        "name": "Taro Net (Potato BBQ)",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Taro_net_potato_bbq.jpg"
+    },
+
+    {
+        "id": 8,
+        "name": "Taro Net (Potato BBQ)",
+        "type": "snack",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Taro_net_potato_bbq.jpg"
+    },
+
+    {
+        "id": 9,
+        "name": "Teh Pucuk",
+        "type": "drinks",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Teh_pucuk.jpg"
+    },
+
+    {
+        "id": 10,
+        "name": "Freshtea (Original)",
+        "type": "drinks",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Freshtea_original.jpg"
+    },
+
+    {
+        "id": 11,
+        "name": "Freshtea (Honey)",
+        "type": "drinks",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Freshtea_honey.jpg"
+    },
+
+    {
+        "id": 12,
+        "name": "Coca Cola",
+        "type": "drinks",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit atque accusamus porro ab asperiores natus voluptate praesentium iusto vitae impedit perspiciatis quae dignissimos deserunt possimus, reprehenderit tempore saepe consequuntur!",
+        "image": "Coca_cola.jpg"
+    }
+
+
+
+
+
+]

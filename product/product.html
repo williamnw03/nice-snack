@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiceSnack - Product</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./product.css">
+
+    <script src="https://kit.fontawesome.com/da2275d436.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav class="navbar-mobile">
+        <div class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <p>NiceSnack</p>
+    </nav>
+    
+    <nav class="navbar-menu">
+        <div class="name-company">
+            <p>NiceSnack</p>
+        </div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./product.html" class="here">Product</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-filter-section">
+        <div class="search">
+            <input type="text" placeholder="Search Here...">
+        </div>
+        <div class="filter">
+            <select>
+                <option value="all">All</option>
+                <option value="snack">Snack</option>
+                <option value="drinks">Drinks</option>
+            </select>
+        </div>
+    </div>
+
+    <main class="list-products">
+        
+        <div class="snacks-div">
+            <h1>Snacks</h1>
+            <div class="each-list-products list-snacks"></div>
+        </div>
+
+        <div class="drinks-div">
+            <h1>Drinks</h1>
+            <div class="each-list-products list-drinks"></div>
+        </div>
+        
+    </main>
+    
+    <footer class="footer">
+
+        <div class="sosmed-list">
+            <div class="sosmed ig">
+                <i class="fa-brands fa-instagram"></i>
+                <p> @nicesnack</p>
+            </div>
+    
+            <div class="sosmed fb">
+                <i class="fa-brands fa-facebook-square"></i>
+                <p>nicesnack</p>
+            </div>
+        </div>
+
+        <p class="madeby">Made by William Nurdin Wijaya</p>
+    </footer>
+
+    <script src="./product.js"></script>
+</body>
+</html>
