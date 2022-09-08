@@ -238,8 +238,8 @@ div.aboutus-section div.aboutus-images div.image-aboutus{
     
     line-height: 0;
 
-    transform: translateY(-30px);
-    transition: all 1s;
+    transform: translateY(-60px);
+    transition: all 2s;
     opacity: 0;
 }
 
@@ -289,8 +289,8 @@ div.ourproduct-section div.products-info div{
     flex-direction: column;
     width: 100%;
 
-    transform: translateY(-30px);
-    transition: all 1s;
+    transform: translateY(-60px);
+    transition: all 2s;
     opacity: 0;
 }
 
@@ -365,8 +365,8 @@ div.award-section div.list-awards div{
     margin-top: 20px;
     padding: 20px;
 
-    transform: translateY(-30px);
-    transition: all 1s;
+    transform: translateY(-60px);
+    transition: all 2s;
     opacity: 0;
 
 }
