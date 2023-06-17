@@ -71,7 +71,7 @@ const observe = new IntersectionObserver(entries => {
     entries.forEach(e => {
         e.target.classList.toggle("muncul-dari-atas", e.isIntersecting)
 
-        if(e.isIntersecting) observe.unobserve(e.target)
+        // if(e.isIntersecting) observe.unobserve(e.target)
         
     })
 }, {threshold: 0.3})
